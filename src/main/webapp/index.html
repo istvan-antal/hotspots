@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hot spots</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/bower_components/semantic-ui/dist/semantic.min.css">
+        <link rel="stylesheet" href="assets/main.css">
+    </head>
+    <body>
+        <div class="ux-content-box">
+            <div id="main-menu" class="ui orange inverted menu">
+                <a href="#dashboard" class="active item">
+                    <i class="home icon"></i> Home
+                </a>
+                <a href="#inputs" class="item">
+                    <i class="mail icon"></i> Inputs
+                </a>
+            </div>
+            <div id="main-content" class="ui fluid segment">
+                <div class="ux-content active" id="dashboard">
+                    <div class="ux-networkconsist-view"></div>
+                </div>
+                <div class="ux-content" id="inputs">
+                    <table id="input-list" class="ui table">
+                        <thead>
+                            <tr>
+                                <th>Host</th>
+                                <th>Name</th>
+                                <th>Value</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <a id="add-input" class="ui button">Add</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="input-form-dialog" class="ui modal">
+            <i class="close icon"></i>
+            <div class="header">
+                New input
+            </div>
+            <div class="content">
+                <form class="ui form">
+                    <div class="field">
+                        <label>Host</label>
+                        <input type="text" name="host">
+                    </div>
+                    <div class="field">
+                        <label>Name</label>
+                        <select name="name">
+                            <option></option>
+                            <option value="sysLocation">sysLocation</option>
+                            <option value="meshPeer">meshPeer</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Value</label>
+                        <input type="text" name="value">
+                    </div>
+                </form>
+            </div>
+            <div class="actions">
+                <div class="ui button">Cancel</div>
+                <div class="ui primary button">OK</div>
+            </div>
+        </div>
+
+
+        <script src="assets/bower_components/jquery/dist/jquery.js"></script>
+        <script src="assets/bower_components/semantic-ui/dist/semantic.min.js"></script>
+
+        <script src="assets/HS.js"></script>
+        <script src="assets/HS/API.js"></script>
+        <script src="assets/HS/NetworkConsistModel.js"></script>
+        <script src="assets/HS/MainMenu.js"></script>
+        <script src="assets/HS/MainContentSwitcher.js"></script>
+        <script src="assets/HS/NetworkConsistView.js"></script>
+        <script src="assets/HS/TableView.js"></script>
+        <script src="assets/HS/InputFormDialog.js"></script>
+        <script src="assets/main.js"></script>
+    </body>
+</html>

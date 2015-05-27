@@ -1,0 +1,21 @@
+.ux-content-box {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.ux-content {
+    display: none;
+}
+
+.ux-content.active {
+    display: block;
+}
+
+.ux-networkconsist-view .ui.segment:first-child .ux-networkconsist-view .ui.segment, .ui.ux-carriage {
+    margin-top: 0;
+}
+
+.ux-carriage .top.label {
+    white-space: nowrap;
+}

@@ -1,0 +1,4 @@
+/src/main/webapp/assets/bower_components
+/target
+/nbproject
+.DS_Store

@@ -1,0 +1,13 @@
+{
+  "name": "hotspots",
+  "version": "0.0.1",
+  "authors": [
+    "Antal István Miklós <istvan.m.antal@gmail.com>"
+  ],
+  "description": "Demo Application",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "semantic-ui": "~1.12.2"
+  }
+}
