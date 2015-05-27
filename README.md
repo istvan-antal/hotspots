@@ -43,12 +43,19 @@ AP3 meshPeer AP2
 
 We can generate the following Network Consist:
 
-[ (AP1) Carriage 1 (AP2)] + [ (AP3) Carriage 2 (AP4) ]
+[ (AP1) Carriage 1 (AP2)] + [ (AP3) Carriage 2 (AP4) ]  
 
 # Requirments
 
 JDK 1.8
 Maven
+Bower
+
+# Dependency installation
+
+```bash
+cd src/main/webapp/assets; bower install
+```
 
 # Usage (Mac OS X)
 
